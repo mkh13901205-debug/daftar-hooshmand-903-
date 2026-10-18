@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081329">
+  <meta name="description" content="دفتر هوشمند ۹۰۳؛ برنامه هفتگی، تکالیف و اطلاعیه‌های کلاس">
+  <title>دفتر هوشمند ۹۰۳</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+:root{--bg:#071126;--surface:#0c1a34;--surface2:#10213f;--line:rgba(147,177,224,.14);--text:#f1f6ff;--muted:#91a3c2;--blue:#36c5ff;--blue2:#1689ff;--gold:#f4c66a;--green:#5de0b0;--red:#ff7d8d;--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#122b51 0,transparent 38%),var(--bg);color:var(--text);font-family:'Vazirmatn',Tahoma,sans-serif;line-height:1.8;min-height:100vh}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button{cursor:pointer}.ambient{position:fixed;width:300px;height:300px;border-radius:50%;filter:blur(110px);opacity:.13;pointer-events:none;z-index:-1}.ambient-one{background:#159dff;top:15%;right:-170px}.ambient-two{background:#d4a644;bottom:5%;left:-190px}.container{width:min(1160px,calc(100% - 40px));margin:auto}.topbar{height:84px;padding:0 max(20px,calc((100% - 1160px)/2));display:flex;align-items:center;gap:30px;border-bottom:1px solid var(--line);background:rgba(7,17,38,.78);backdrop-filter:blur(18px);position:sticky;top:0;z-index:20}.brand{display:flex;align-items:center;gap:12px;white-space:nowrap}.brand-mark{display:grid;place-items:center;width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#143f73,#0d1b36);border:1px solid #2473ad;color:var(--blue);font-size:18px;font-weight:800;box-shadow:0 0 24px #1689ff20}.brand strong{display:block;font-size:15px;letter-spacing:-.3px}.brand small{display:block;color:var(--muted);font-size:10px;margin-top:1px}.nav{display:flex;align-items:center;gap:5px;margin-inline-start:auto}.nav-link{padding:9px 13px;color:#a9bad5;font-size:12px;border-radius:10px;transition:.2s}.nav-link:hover,.nav-link.active{color:#fff;background:#142747}.nav-link.active{box-shadow:inset 0 -2px var(--blue)}.online{font-size:10px;color:#b8c8df;display:flex;align-items:center;gap:8px;white-space:nowrap}.online span,.live-dot,.news-live span{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 12px #5de0b0;display:inline-block}.menu-toggle{display:none;background:transparent;border:1px solid var(--line);color:white;border-radius:10px;padding:6px 11px}.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px;padding:64px 0 36px;min-height:380px}.eyebrow,.section-kicker{color:var(--blue);font-size:11px;font-weight:700;letter-spacing:.2px}.spark{color:var(--gold);margin-left:5px}.hero h1{font-size:clamp(30px,4.3vw,49px);line-height:1.55;margin:12px 0 8px;letter-spacing:-1.5px}.hero h1 em{font-style:normal;background:linear-gradient(90deg,#4ed7ff,#70aaff 65%,#f4c66a);color:transparent;background-clip:text;-webkit-background-clip:text}.hero-copy>p{font-size:14px;color:#a5b6d1;max-width:510px;margin:0 0 22px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border:1px solid transparent;border-radius:12px;padding:10px 17px;font-size:12px;font-weight:700;transition:transform .2s,box-shadow .2s;background:transparent;color:var(--text)}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(110deg,#1689ff,#25baff);color:#041328;box-shadow:0 8px 28px #1689ff28}.btn-primary:hover{box-shadow:0 10px 32px #1689ff45}.btn-ghost{border-color:#304565;background:#0e1d37;color:#dce8f9}.btn-danger{border-color:#753746;background:#341b2b;color:#ffb4bd}.hero-foot{display:flex;align-items:center;gap:9px;color:#8195b6;font-size:10px;margin-top:24px}.foot-sep{color:#435777}.hero-panel{height:290px;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid #25446c;border-radius:28px;background:radial-gradient(circle at 50% 45%,#163a65 0,#0d1d39 45%,#0a1630 78%);box-shadow:inset 0 0 55px #1689ff0b,0 24px 70px #0002}.hero-panel:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#87b9ff0a 1px,transparent 1px),linear-gradient(90deg,#87b9ff0a 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(transparent,#000,transparent)}.panel-orbit{position:absolute;border:1px solid #3a94d533;border-radius:50%;width:220px;height:220px;transform:rotate(-28deg) scaleY(.55)}.orbit-b{width:280px;height:280px;border-color:#f4c66a28;transform:rotate(35deg) scaleY(.52)}.hero-emblem{width:145px;height:145px;border-radius:40px;display:flex;flex-direction:column;justify-content:center;align-items:center;transform:rotate(-7deg);background:linear-gradient(145deg,#153d6b,#0a1730);border:1px solid #3ca8ef;box-shadow:0 0 40px #1689ff22,inset 0 0 25px #1689ff12;z-index:1}.hero-emblem span{font-size:46px;font-weight:800;color:#d9f6ff;text-shadow:0 0 24px #36c5ff88}.hero-emblem small{font-size:9px;letter-spacing:3px;color:var(--gold);direction:ltr}.floating-chip{position:absolute;display:flex;align-items:center;gap:10px;padding:10px 13px;border-radius:13px;border:1px solid #355071;background:#0c1b35eF;box-shadow:0 10px 30px #0003;z-index:2}.chip-top{top:32px;right:22px}.chip-bottom{bottom:28px;left:20px}.floating-chip b,.floating-chip small{display:block}.floating-chip b{font-size:11px}.floating-chip small{font-size:9px;color:var(--muted)}.chip-icon{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-size:15px}.chip-icon.blue{color:var(--blue);background:#1689ff20}.chip-icon.gold{color:var(--gold);background:#f4c66a17}.date-strip{display:flex;align-items:center;gap:14px;background:linear-gradient(100deg,#102441,#0d1a32);border:1px solid #253c5c;border-radius:17px;padding:15px 20px;margin:0 0 46px}.date-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#1689ff1b;color:var(--blue);font-size:24px}.date-strip small,.date-strip strong{display:block}.date-strip small{font-size:10px;color:var(--muted)}.date-strip strong{font-size:13px}.date-divider{height:32px;width:1px;background:var(--line);margin:0 10px}.date-spacer{flex:1}.date-tag,.section-badge,.count-pill,.panel-lock{font-size:10px;padding:5px 11px;border:1px solid #2b5276;border-radius:9px;color:var(--blue);background:#1689ff0d}.section{margin:0 0 54px}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:20px}.section-heading h2{font-size:23px;line-height:1.5;margin:4px 0 0;letter-spacing:-.5px}.section-desc{font-size:11px;color:var(--muted);margin:4px 0 0}.heading-mark{font-size:27px;color:var(--gold)}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.quick-card{min-width:0;display:flex;align-items:center;gap:11px;padding:17px 14px;border-radius:17px;background:linear-gradient(135deg,#10213f,#0b1931);border:1px solid var(--line);transition:.2s}.quick-card:hover{transform:translateY(-3px);border-color:#2778a7;box-shadow:0 12px 30px #0002}.quick-icon{width:41px;height:41px;flex-shrink:0;display:grid;place-items:center;border-radius:13px;font-size:20px}.icon-blue{background:#1689ff1c;color:var(--blue)}.icon-gold{background:#f4c66a17;color:var(--gold)}.icon-purple{background:#a08aff1b;color:#b5a1ff}.icon-green{background:#5de0b018;color:var(--green)}.quick-card b,.quick-card small{display:block}.quick-card b{font-size:11px}.quick-card small{font-size:9px;color:var(--muted);margin-top:2px}.arrow{margin-inline-start:auto;color:#6685ac;font-size:16px}.schedule-wrap{overflow:auto;border:1px solid var(--line);border-radius:17px;background:#0b1830}.schedule-table{width:100%;border-collapse:collapse;min-width:600px;text-align:center}.schedule-table th{font-size:11px;font-weight:600;color:#8fa9cc;background:#10213e;padding:14px 10px}.schedule-table td{padding:15px 10px;border-top:1px solid var(--line);font-size:12px;color:#e0eafa}.schedule-table td:first-child{color:var(--gold);font-weight:700;background:#101e38}.schedule-table tbody tr:hover td{background-color:#142849}.schedule-table tbody tr:hover td:first-child{background:#172b4a}.schedule-mobile{display:none}.small-note{font-size:10px;color:#8295b3;margin:12px 0}.task-toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:15px}.filter-tabs{display:flex;gap:5px;background:#0b1931;padding:4px;border:1px solid var(--line);border-radius:12px}.filter-tab{border:0;background:transparent;color:#8fa1bf;font-size:10px;padding:7px 13px;border-radius:8px}.filter-tab.selected{background:#193456;color:#dff5ff;box-shadow:inset 0 0 0 1px #2a6990}.search-box{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:#0b1931;border-radius:11px;padding:0 12px;color:var(--muted);width:min(270px,100%)}.search-box input{width:100%;border:0;outline:0;background:transparent;color:var(--text);padding:9px 0;font-size:11px}.task-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.task-card{border:1px solid var(--line);border-radius:17px;padding:17px;background:linear-gradient(135deg,#0f203b,#0b1830);min-width:0}.task-card.is-done{opacity:.7}.task-top{display:flex;gap:10px;align-items:flex-start}.task-check{appearance:none;flex-shrink:0;width:21px;height:21px;border:1px solid #486181;border-radius:7px;background:#0a162b;margin-top:2px;display:grid;place-items:center}.task-check:checked{background:var(--green);border-color:var(--green)}.task-check:checked:after{content:"✓";font-size:13px;color:#06271e;font-weight:800}.task-title{font-size:13px;font-weight:700;margin:0;line-height:1.6}.is-done .task-title{text-decoration:line-through;color:#8ba0bd}.subject-chip{display:inline-block;color:var(--blue);background:#1689ff15;border:1px solid #1689ff28;padding:2px 8px;border-radius:7px;font-size:9px;margin-top:6px}.task-desc{font-size:11px;color:#9aacc8;margin:10px 0;white-space:pre-wrap;overflow-wrap:anywhere}.task-meta{display:flex;justify-content:space-between;gap:8px;align-items:center;color:#8297b6;font-size:9px;border-top:1px solid var(--line);padding-top:10px}.task-meta .due{color:var(--gold)}.task-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}.mini-btn{border:1px solid #2a4264;background:#10213d;color:#bcd0eb;padding:5px 9px;border-radius:8px;font-size:9px}.mini-btn:hover{border-color:var(--blue);color:white}.mini-btn.danger{color:#ff9daa;border-color:#5c3042}.empty-state{grid-column:1/-1;text-align:center;padding:30px 15px;border:1px dashed #2b405f;border-radius:16px;color:var(--muted);font-size:12px}.empty-state span{display:block;font-size:26px;margin-bottom:4px;color:#3e709f}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.news-card{overflow:hidden;border:1px solid var(--line);border-radius:17px;background:linear-gradient(135deg,#10213d,#0a1830)}.news-image{height:130px;background:linear-gradient(135deg,#173f67,#122342);display:grid;place-items:center;overflow:hidden;color:#69bfff;font-size:32px}.news-image img{width:100%;height:100%;object-fit:cover}.news-body{padding:15px}.news-date{font-size:9px;color:var(--gold)}.news-body h3{font-size:13px;margin:6px 0;line-height:1.7}.news-body p{font-size:11px;color:#9bacc6;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}.news-actions{display:flex;gap:6px;margin-top:12px}.news-live{font-size:10px;color:#b6c7de;display:flex;align-items:center;gap:7px}.panel-section{border:1px solid #213958;border-radius:22px;padding:23px;background:linear-gradient(135deg,#0d1c35,#0a172c)}.notice-warning{padding:13px 15px;border:1px solid #725b2d;background:#3b301a45;border-radius:13px;margin-bottom:18px}.notice-warning strong{color:var(--gold);font-size:11px}.notice-warning p{font-size:10px;color:#c5bda7;margin:4px 0 0;line-height:2}.panel-tabs{display:flex;gap:5px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px}.panel-tab{border:1px solid transparent;background:transparent;color:#91a3bf;padding:8px 12px;border-radius:9px;font-size:10px}.panel-tab.active{background:#15304e;color:#dff6ff;border-color:#245b7e}.panel-tab span{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 4px;border-radius:6px;background:#203d5d;color:var(--gold);margin-right:3px}.panel-content{display:none;padding-top:18px}.panel-content.active{display:block}.editor-form{display:grid;gap:13px;max-width:760px}.editor-form label,.qa-form label{display:grid;gap:5px;font-size:10px;color:#a9bbd5}.editor-form input,.editor-form textarea,.qa-form input,.qa-form textarea{width:100%;border:1px solid #263e60;border-radius:10px;background:#08152b;color:var(--text);outline:none;padding:10px 12px;font-size:11px;resize:vertical}.editor-form input:focus,.editor-form textarea:focus,.qa-form input:focus,.qa-form textarea:focus{border-color:#288dc4;box-shadow:0 0 0 3px #1689ff13}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-actions{display:flex;gap:8px;flex-wrap:wrap}.hidden{display:none!important}.compact-form{padding:14px;border:1px solid var(--line);border-radius:14px;margin-bottom:15px}.suggestion-list{display:grid;gap:9px}.suggestion-card{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.suggestion-card b{font-size:11px}.suggestion-card small{display:block;color:var(--muted);font-size:9px}.suggestion-actions{display:flex;gap:6px}.data-actions{display:flex;gap:10px;flex-wrap:wrap}.file-label{position:relative;overflow:hidden}.file-label input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}.footer{border-top:1px solid var(--line);padding:25px 0 30px;text-align:center;color:var(--muted)}.footer-brand{display:flex;justify-content:center;align-items:center;gap:9px;color:#dce8f7;font-size:12px}.small-mark{width:32px;height:32px;border-radius:10px;font-size:12px}.footer p{font-size:10px;margin:5px}.footer>small{font-size:9px;color:#617694}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:60;padding:10px 17px;border:1px solid #2d6583;border-radius:12px;background:#102743;color:#eafaff;font-size:11px;box-shadow:0 12px 35px #0005;transition:.25s;max-width:calc(100% - 30px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.qa-dialog{width:min(570px,calc(100% - 24px));max-height:88vh;border:1px solid #2a496d;border-radius:20px;background:#0b1931;color:var(--text);padding:20px;box-shadow:0 25px 100px #000a}.qa-dialog::backdrop{background:#030916c9;backdrop-filter:blur(5px)}.dialog-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.dialog-head h3{margin:3px 0;font-size:17px}.icon-button{border:1px solid var(--line);background:#10213d;color:white;border-radius:9px;padding:6px 10px}.dialog-subtitle{font-size:10px;color:var(--muted);margin:5px 0 13px}.qa-messages{display:grid;gap:9px;max-height:250px;overflow:auto;padding:2px 1px 12px}.qa-message{padding:10px 12px;background:#10213c;border:1px solid var(--line);border-radius:12px}.qa-message-head{display:flex;justify-content:space-between;gap:8px;font-size:10px}.qa-message-head b{color:var(--blue)}.qa-message-head small{color:var(--muted)}.qa-message p{font-size:11px;white-space:pre-wrap;overflow-wrap:anywhere;margin:5px 0 0}.qa-message-tools{text-align:left;margin-top:6px}.qa-form{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:13px}.qa-form .btn{justify-self:start}@media(max-width:1000px){.topbar{gap:14px}.online{display:none}.nav-link{padding:8px 10px}.quick-grid{grid-template-columns:repeat(2,1fr)}.hero{padding-top:45px}.hero-panel{height:270px}}@media(max-width:720px){.container{width:min(100% - 28px,560px)}.topbar{height:70px;padding:0 14px;gap:10px}.brand-mark{width:42px;height:42px}.brand strong{font-size:13px}.brand small{font-size:9px}.menu-toggle{display:block;margin-inline-start:auto}.nav{display:none;position:absolute;top:69px;right:10px;left:10px;padding:10px;background:#0c1a33;border:1px solid #2b4262;border-radius:14px;box-shadow:0 18px 40px #0006;flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav-link{padding:10px 12px}.hero{grid-template-columns:1fr;padding:34px 0 24px;gap:20px}.hero h1{font-size:32px}.hero-copy>p{font-size:12px}.hero-panel{height:230px;max-width:480px;width:100%;margin:auto}.hero-emblem{width:118px;height:118px;border-radius:32px}.hero-emblem span{font-size:38px}.chip-top{top:18px;right:12px}.chip-bottom{bottom:17px;left:12px}.floating-chip{padding:8px 10px}.date-strip{padding:12px;gap:10px;margin-bottom:36px}.date-icon{width:36px;height:36px}.date-strip strong{font-size:11px}.date-tag{font-size:9px;padding:4px 7px}.section{margin-bottom:40px}.section-heading h2{font-size:20px}.quick-grid{gap:9px}.quick-card{padding:12px 10px;gap:8px}.quick-icon{width:35px;height:35px;border-radius:11px;font-size:17px}.quick-card b{font-size:10px}.quick-card small{font-size:8px}.arrow{font-size:13px}.schedule-wrap{display:none}.schedule-mobile{display:grid;gap:10px}.day-card{border:1px solid var(--line);background:#0c1a33;border-radius:14px;padding:12px}.day-title{color:var(--gold);font-size:12px;font-weight:700;margin-bottom:8px}.periods{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.period{padding:8px;background:#10213d;border-radius:9px;min-width:0}.period small{display:block;color:#7189aa;font-size:9px}.period b{font-size:10px;font-weight:600;overflow-wrap:anywhere}.task-list{grid-template-columns:1fr}.task-toolbar{align-items:stretch;flex-direction:column}.search-box{width:100%}.filter-tabs{align-self:flex-start}.news-grid{grid-template-columns:1fr}.news-card{display:grid;grid-template-columns:110px 1fr}.news-image{height:100%;min-height:145px}.news-body{padding:12px}.news-body h3{font-size:12px}.news-body p{font-size:10px}.panel-section{padding:15px}.panel-tabs{gap:4px}.panel-tab{padding:7px 9px;font-size:9px}.form-row{grid-template-columns:1fr}.date-divider{margin:0 3px}.date-spacer{min-width:0}.date-tag{display:none}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+  </style>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="صفحه اصلی دفتر هوشمند ۹۰۳">
+      <span class="brand-mark">۹۰۳</span>
+      <span><strong>دفتر هوشمند ۹۰۳</strong><small>همیشه در دسترس، همیشه همراه</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو">☰</button>
+    <nav id="mainNav" class="nav">
+      <a class="nav-link active" href="#home">خانه</a>
+      <a class="nav-link" href="#schedule">برنامه هفتگی</a>
+      <a class="nav-link" href="#tasks">تکالیف</a>
+      <a class="nav-link" href="#news">اخبار</a>
+      <a class="nav-link" href="#panel">پنل کاربری</a>
+    </nav>
+    <div class="online"><span></span> نسخه محلی فعال</div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="spark">✦</span> همراه هوشمند کلاس شما</div>
+        <h1>یک قدم جلوتر،<br><em>با دفتر هوشمند ۹۰۳</em></h1>
+        <p>برنامه کلاس، تکالیف و خبرهای مهم؛ همه‌چیز مرتب و یک‌جا.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tasks">مشاهده تکالیف <span>←</span></a>
+          <a class="btn btn-ghost" href="#schedule">برنامه هفتگی</a>
+        </div>
+        <div class="hero-foot"><span class="live-dot"></span> همراه کلاس ۹۰۳ <span class="foot-sep">•</span> ساده، سریع، همیشه در دسترس</div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-orbit orbit-a"></div><div class="panel-orbit orbit-b"></div>
+        <div class="hero-emblem"><span>۹۰۳</span><small>CLASS HUB</small></div>
+        <div class="floating-chip chip-top"><span class="chip-icon blue">✓</span><span><b id="heroTaskCount">۰</b><small>تکلیف ثبت‌شده</small></span></div>
+        <div class="floating-chip chip-bottom"><span class="chip-icon gold">✦</span><span><b>همراه کلاس</b><small>برنامه‌ریزی آسان‌تر</small></span></div>
+      </div>
+    </section>
+
+    <section class="date-strip">
+      <div class="date-icon">◷</div>
+      <div><small>امروز</small><strong id="todayDate">در حال دریافت تاریخ…</strong></div>
+      <div class="date-divider"></div>
+      <div><small>روز هفته</small><strong id="todayDay">—</strong></div>
+      <div class="date-spacer"></div><span class="date-tag">کلاس ۹۰۳</span>
+    </section>
+
+    <section class="section" id="quick">
+      <div class="section-heading"><div><span class="section-kicker">دسترسی سریع</span><h2>از اینجا شروع کن</h2></div><span class="heading-mark">✳</span></div>
+      <div class="quick-grid">
+        <a class="quick-card" href="#schedule"><span class="quick-icon icon-blue">▦</span><span><b>برنامه هفتگی</b><small>زنگ‌های این هفته</small></span><span class="arrow">↗</span></a>
+        <a class="quick-card" href="#tasks"><span class="quick-icon icon-gold">✎</span><span><b>تکالیف کلاس</b><small>کارهای پیش رو</small></span><span class="arrow">↗</span></a>
+        <a class="quick-card" href="#news"><span class="quick-icon icon-purple">◈</span><span><b>اخبار و اطلاعیه‌ها</b><small>خبرهای تازه کلاس</small></span><span class="arrow">↗</span></a>
+        <a class="quick-card" href="#panel"><span class="quick-icon icon-green">⚙</span><span><b>مدیریت محلی</b><small>ثبت و ویرایش محتوا</small></span><span class="arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="schedule">
+      <div class="section-heading"><div><span class="section-kicker">برنامه کلاس</span><h2>برنامه هفتگی ۹۰۳</h2><p class="section-desc">پنج روز درسی، چهار زنگ در هر روز</p></div><span class="section-badge">۱۴۰۵ / ۱۴۰۶</span></div>
+      <div class="schedule-wrap">
+        <table class="schedule-table">
+          <thead><tr><th>روز</th><th>زنگ اول</th><th>زنگ دوم</th><th>زنگ سوم</th><th>زنگ چهارم</th></tr></thead>
+          <tbody id="scheduleBody"></tbody>
+        </table>
+      </div>
+      <div class="schedule-mobile" id="scheduleMobile"></div>
+      <p class="small-note">یادآوری: «مطالعات / فیزیک» و «زمین / آزمایشگاه» مطابق برنامه اعلام‌شده درج شده‌اند.</p>
+    </section>
+
+    <section class="section" id="tasks">
+      <div class="section-heading"><div><span class="section-kicker">برنامه‌ریزی درسی</span><h2>تکالیف کلاس</h2><p class="section-desc">تکالیف را ببین، انجام بده و علامت بزن.</p></div><span class="count-pill" id="taskSummary">۰ تکلیف</span></div>
+      <div class="task-toolbar">
+        <div class="filter-tabs" role="group" aria-label="فیلتر تکالیف">
+          <button class="filter-tab selected" data-filter="all">همه</button>
+          <button class="filter-tab" data-filter="open">انجام‌نشده</button>
+          <button class="filter-tab" data-filter="done">انجام‌شده</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="taskSearch" type="search" placeholder="جست‌وجوی تکلیف…"></label>
+      </div>
+      <div id="taskList" class="task-list"></div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-heading"><div><span class="section-kicker">تابلوی اعلانات</span><h2>اخبار و اطلاعیه‌ها</h2><p class="section-desc">اطلاعیه‌های مهم کلاس را اینجا دنبال کن.</p></div><span class="news-live"><span></span> تازه‌ها</span></div>
+      <div class="news-grid" id="newsList"></div>
+    </section>
+
+    <section class="section panel-section" id="panel">
+      <div class="section-heading"><div><span class="section-kicker">ابزارهای مدیریت</span><h2>پنل مدیریت محلی</h2><p class="section-desc">ثبت و ویرایش اطلاعات در همین مرورگر.</p></div><span class="panel-lock">⚙ محلی</span></div>
+      <div class="notice-warning"><strong>محدودیت مهم این نسخه</strong><p>GitHub Pages فقط فایل‌های ثابت را میزبانی می‌کند. این نسخه اطلاعات را در حافظهٔ همین مرورگر ذخیره می‌کند؛ بنابراین بین دانش‌آموزان مشترک نیست و ورود مدیر یا مجوزها امنیت واقعی ندارند. برای جلوگیری از نمایش امنیتِ غیرواقعی، رمز اولیه در کد قرار داده نشده و این پنل برای داده‌های عمومی/آزمایشی است. برای ورود امن و اطلاعات مشترک باید بعداً یک بک‌اند اضافه شود؛ فعلاً هیچ سرویس خارجی متصل نیست.</p></div>
+      <div class="panel-tabs">
+        <button class="panel-tab active" data-panel="taskFormPanel">افزودن تکلیف</button>
+        <button class="panel-tab" data-panel="newsFormPanel">افزودن خبر</button>
+        <button class="panel-tab" data-panel="suggestionsPanel">پیشنهادها <span id="suggestionCount">۰</span></button>
+        <button class="panel-tab" data-panel="dataPanel">پشتیبان اطلاعات</button>
+      </div>
+      <div class="panel-content active" id="taskFormPanel">
+        <form id="taskForm" class="editor-form">
+          <input type="hidden" id="editTaskId">
+          <label>عنوان تکلیف<input id="taskTitle" required maxlength="120" placeholder="مثلاً حل تمرین‌های صفحه ۴۲"></label>
+          <div class="form-row"><label>نام درس<input id="taskSubject" required maxlength="60" placeholder="ریاضی"></label><label>تاریخ انجام<input id="taskDue" type="date" required></label></div>
+          <label>توضیحات<textarea id="taskDescription" rows="3" maxlength="1500" placeholder="جزئیات تکلیف…"></textarea></label>
+          <div class="form-actions"><button class="btn btn-primary" type="submit" id="taskSubmit">ثبت تکلیف</button><button class="btn btn-ghost hidden" type="button" id="cancelTaskEdit">لغو ویرایش</button></div>
+        </form>
+      </div>
+      <div class="panel-content" id="newsFormPanel">
+        <form id="newsForm" class="editor-form">
+          <input type="hidden" id="editNewsId">
+          <label>عنوان خبر<input id="newsTitle" required maxlength="140" placeholder="عنوان اطلاعیه"></label>
+          <label>متن خبر<textarea id="newsText" required rows="4" maxlength="2500" placeholder="متن کامل خبر…"></textarea></label>
+          <label>لینک تصویر (اختیاری)<input id="newsImage" type="url" placeholder="https://example.com/image.jpg"></label>
+          <div class="form-actions"><button class="btn btn-primary" type="submit" id="newsSubmit">ثبت خبر</button><button class="btn btn-ghost hidden" type="button" id="cancelNewsEdit">لغو ویرایش</button></div>
+        </form>
+      </div>
+      <div class="panel-content" id="suggestionsPanel">
+        <p class="small-note">پیشنهادهای ثبت‌شده در همین مرورگر را بررسی کنید. پیشنهاد تأییدشده به فهرست تکالیف اضافه می‌شود.</p>
+        <form id="suggestionForm" class="editor-form compact-form">
+          <label>پیشنهاد تکلیف<input id="suggestionTitle" required maxlength="120" placeholder="چه تکلیفی پیشنهاد می‌کنی؟"></label>
+          <div class="form-row"><label>درس<input id="suggestionSubject" required maxlength="60"></label><label>تاریخ انجام<input id="suggestionDue" type="date" required></label></div>
+          <label>توضیحات<textarea id="suggestionDescription" rows="2" maxlength="1000"></textarea></label>
+          <button class="btn btn-ghost" type="submit">ارسال پیشنهاد</button>
+        </form>
+        <div id="suggestionList" class="suggestion-list"></div>
+      </div>
+      <div class="panel-content" id="dataPanel">
+        <p class="small-note">از اطلاعات این مرورگر فایل پشتیبان بگیر یا یک پشتیبان قبلی را بازیابی کن. این فایل شامل تکالیف، خبرها، پیام‌ها و پیشنهادهاست.</p>
+        <div class="data-actions"><button class="btn btn-primary" id="exportData">دانلود پشتیبان JSON</button><label class="btn btn-ghost file-label">بازیابی پشتیبان<input type="file" id="importData" accept="application/json"></label><button class="btn btn-danger" id="resetData">بازنشانی اطلاعات محلی</button></div>
+      </div>
+    </section>
+
+    <footer class="footer"><div class="footer-brand"><span class="brand-mark small-mark">۹۰۳</span><strong>دفتر هوشمند ۹۰۳</strong></div><p>همیشه در دسترس، همیشه همراه</p><small>نسخهٔ ایستا برای GitHub Pages · اطلاعات این نسخه فقط روی همین دستگاه ذخیره می‌شود.</small></footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="qaDialog" class="qa-dialog">
+    <div class="dialog-head"><div><span class="section-kicker">گفت‌وگوی اختصاصی تکلیف</span><h3 id="qaTitle">پرسش‌وپاسخ</h3></div><button class="icon-button" id="closeQa" aria-label="بستن">✕</button></div>
+    <p class="dialog-subtitle">پیام‌ها فقط در همین مرورگر ذخیره می‌شوند و برای دیگران قابل مشاهده نیستند.</p>
+    <div id="qaMessages" class="qa-messages"></div>
+    <form id="qaForm" class="qa-form"><label>نام نمایشی<input id="qaAuthor" maxlength="40" required placeholder="مثلاً علی"></label><label>پیام شما<textarea id="qaText" required rows="2" maxlength="1000" placeholder="سؤال یا پاسخ خود را بنویسید…"></textarea></label><button class="btn btn-primary" type="submit">ارسال پیام</button></form>
+  </dialog>
+  <script>
+(() => {
+  "use strict";
+  const $ = (s, root=document) => root.querySelector(s);
+  const $$ = (s, root=document) => [...root.querySelectorAll(s)];
+  const STORAGE_KEY = "daftar903_local_v1";
+  const days = ["شنبه","یکشنبه","دوشنبه","سه‌شنبه","چهارشنبه"];
+  const schedule = [
+    ["مطالعات / فیزیک","زبان","زیست","ورزش"],
+    ["شیمی","ادبیات","ریاضی","هنر"],
+    ["املا و انشا","زمین / آزمایشگاه","عربی","دفاعی"],
+    ["ریاضی","مطالعات","فیزیک","کاروفناوری"],
+    ["ریاضی","فارسی","قرآن","پیام"]
+  ];
+  const persianDigits = n => String(n).replace(/\d/g, d => "۰۱۲۳۴۵۶۷۸۹"[Number(d)]);
+  const dateFmt = new Intl.DateTimeFormat("fa-IR-u-ca-persian", {year:"numeric",month:"long",day:"numeric"});
+  const dateShort = new Intl.DateTimeFormat("fa-IR-u-ca-persian", {year:"numeric",month:"2-digit",day:"2-digit"});
+  const dayFmt = new Intl.DateTimeFormat("fa-IR", {weekday:"long"});
+  const timeFmt = new Intl.DateTimeFormat("fa-IR", {hour:"2-digit",minute:"2-digit"});
+  const todayISO = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`; };
+  const uid = () => `${Date.now().toString(36)}${Math.random().toString(36).slice(2,8)}`;
+  const nowText = () => `${dateFmt.format(new Date())}، ساعت ${timeFmt.format(new Date())}`;
+  const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const dateLabel = iso => { if (!iso) return "بدون تاریخ"; const d = new Date(`${iso}T12:00:00`); return Number.isNaN(d.getTime()) ? escapeHTML(iso) : dateFmt.format(d); };
+  const initial = () => ({
+    tasks: [
+      {id:uid(),title:"مرور درس امروز",subject:"مطالعات",description:"نکته‌های مهم درس را مرور کنید.",createdAt:new Date().toISOString(),due:todayISO(),done:false,qa:[]},
+      {id:uid(),title:"حل تمرین‌های مشخص‌شده",subject:"ریاضی",description:"تمرین‌های تعیین‌شده در کلاس را حل کنید.",createdAt:new Date().toISOString(),due:todayISO(),done:false,qa:[]}
+    ],
+    news: [
+      {id:uid(),title:"به دفتر هوشمند ۹۰۳ خوش آمدید",text:"این فضا برای مرتب‌کردن برنامه هفتگی، تکالیف و اطلاعیه‌های کلاس طراحی شده است. در نسخه فعلی، اطلاعات فقط در مرورگر شما ذخیره می‌شود.",image:"",createdAt:new Date().toISOString()}
+    ],
+    suggestions: []
+  });
+  let state = loadState();
+  let currentFilter = "all";
+  let currentQaTaskId = null;
+  let toastTimer = null;
+
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return initial();
+      const parsed = JSON.parse(raw);
+      if (!parsed || !Array.isArray(parsed.tasks) || !Array.isArray(parsed.news) || !Array.isArray(parsed.suggestions)) return initial();
+      parsed.tasks.forEach(t => { if (!Array.isArray(t.qa)) t.qa = []; if (typeof t.done !== "boolean") t.done = false; });
+      return parsed;
+    } catch { return initial(); }
+  }
+  function save() {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); return true; }
+    catch { toast("ذخیره‌سازی انجام نشد؛ فضای مرورگر ممکن است پر باشد."); return false; }
+  }
+  function toast(message) {
+    const el = $("#toast"); el.textContent = message; el.classList.add("show");
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove("show"), 2800);
+  }
+  function renderDate() {
+    $("#todayDate").textContent = dateFmt.format(new Date());
+    $("#todayDay").textContent = dayFmt.format(new Date());
+  }
+  function renderSchedule() {
+    $("#scheduleBody").innerHTML = schedule.map((lessons,i)=>`<tr><td>${days[i]}</td>${lessons.map((lesson,j)=>`<td>${escapeHTML(lesson)}</td>`).join("")}</tr>`).join("");
+    $("#scheduleMobile").innerHTML = schedule.map((lessons,i)=>`<article class="day-card"><div class="day-title">${days[i]}</div><div class="periods">${lessons.map((lesson,j)=>`<div class="period"><small>زنگ ${["اول","دوم","سوم","چهارم"][j]}</small><b>${escapeHTML(lesson)}</b></div>`).join("")}</div></article>`).join("");
+  }
+  function renderTasks() {
+    const query = $("#taskSearch").value.trim().toLocaleLowerCase("fa");
+    const filtered = state.tasks.filter(t => {
+      const matchesFilter = currentFilter === "all" || (currentFilter === "open" && !t.done) || (currentFilter === "done" && t.done);
+      return matchesFilter && `${t.title} ${t.subject} ${t.description}`.toLocaleLowerCase("fa").includes(query);
+    }).sort((a,b) => (a.done-b.done) || String(a.due).localeCompare(String(b.due)) || String(b.createdAt).localeCompare(String(a.createdAt)));
+    const openCount = state.tasks.filter(t=>!t.done).length;
+    $("#taskSummary").textContent = `${persianDigits(openCount)} انجام‌نشده از ${persianDigits(state.tasks.length)} تکلیف`;
+    $("#heroTaskCount").textContent = persianDigits(state.tasks.length);
+    if (!filtered.length) { $("#taskList").innerHTML = `<div class="empty-state"><span>✓</span>تکلیفی برای نمایش پیدا نشد.</div>`; return; }
+    $("#taskList").innerHTML = filtered.map(t=>`
+      <article class="task-card ${t.done?"is-done":""}" data-task="${escapeHTML(t.id)}">
+        <div class="task-top"><input class="task-check" type="checkbox" aria-label="علامت‌گذاری انجام تکلیف" data-action="toggle-task" data-id="${escapeHTML(t.id)}" ${t.done?"checked":""}><div><h3 class="task-title">${escapeHTML(t.title)}</h3><span class="subject-chip">${escapeHTML(t.subject)}</span></div></div>
+        ${t.description?`<p class="task-desc">${escapeHTML(t.description)}</p>`:""}
+        <div class="task-meta"><span>ثبت: ${dateLabel((t.createdAt||"").slice(0,10))}</span><span class="due">مهلت: ${dateLabel(t.due)}</span></div>
+        <div class="task-actions"><button class="mini-btn" data-action="qa" data-id="${escapeHTML(t.id)}">پرسش‌وپاسخ (${persianDigits((t.qa||[]).length)})</button><button class="mini-btn" data-action="edit-task" data-id="${escapeHTML(t.id)}">ویرایش</button><button class="mini-btn danger" data-action="delete-task" data-id="${escapeHTML(t.id)}">حذف</button></div>
+      </article>`).join("");
+  }
+  function renderNews() {
+    const list = [...state.news].sort((a,b)=>String(b.createdAt).localeCompare(String(a.createdAt)));
+    if (!list.length) { $("#newsList").innerHTML = `<div class="empty-state"><span>◈</span>هنوز خبری ثبت نشده است.</div>`; return; }
+    $("#newsList").innerHTML = list.map(n=>`<article class="news-card"><div class="news-image">${n.image?`<img src="${escapeHTML(n.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.textContent='◈'">`:"◈"}</div><div class="news-body"><span class="news-date">${dateLabel((n.createdAt||"").slice(0,10))}</span><h3>${escapeHTML(n.title)}</h3><p>${escapeHTML(n.text)}</p><div class="news-actions"><button class="mini-btn" data-action="edit-news" data-id="${escapeHTML(n.id)}">ویرایش</button><button class="mini-btn danger" data-action="delete-news" data-id="${escapeHTML(n.id)}">حذف</button></div></div></article>`).join("");
+  }
+  function renderSuggestions() {
+    $("#suggestionCount").textContent = persianDigits(state.suggestions.length);
+    if (!state.suggestions.length) { $("#suggestionList").innerHTML = `<div class="empty-state">پیشنهادی برای بررسی وجود ندارد.</div>`; return; }
+    $("#suggestionList").innerHTML = state.suggestions.map(s=>`<div class="suggestion-card"><div><b>${escapeHTML(s.title)}</b><small>${escapeHTML(s.subject)} · مهلت: ${dateLabel(s.due)} · پیشنهاددهنده: ${escapeHTML(s.author||"دانش‌آموز")}</small><small>${escapeHTML(s.description||"بدون توضیحات")}</small></div><div class="suggestion-actions"><button class="mini-btn" data-action="approve-suggestion" data-id="${escapeHTML(s.id)}">تأیید و انتشار</button><button class="mini-btn danger" data-action="reject-suggestion" data-id="${escapeHTML(s.id)}">رد</button></div></div>`).join("");
+  }
+  function renderAll() { renderTasks(); renderNews(); renderSuggestions(); }
+  function resetTaskForm() { $("#taskForm").reset(); $("#editTaskId").value=""; $("#taskSubmit").textContent="ثبت تکلیف"; $("#cancelTaskEdit").classList.add("hidden"); $("#taskDue").value=todayISO(); }
+  function resetNewsForm() { $("#newsForm").reset(); $("#editNewsId").value=""; $("#newsSubmit").textContent="ثبت خبر"; $("#cancelNewsEdit").classList.add("hidden"); }
+  function startEditTask(id) {
+    const t=state.tasks.find(x=>x.id===id); if(!t)return;
+    $("#editTaskId").value=t.id; $("#taskTitle").value=t.title; $("#taskSubject").value=t.subject; $("#taskDue").value=t.due; $("#taskDescription").value=t.description||"";
+    $("#taskSubmit").textContent="ذخیره تغییرات"; $("#cancelTaskEdit").classList.remove("hidden");
+    activatePanel("taskFormPanel"); $("#panel").scrollIntoView({behavior:"smooth",block:"start"}); toast("اطلاعات تکلیف برای ویرایش بارگذاری شد.");
+  }
+  function startEditNews(id) {
+    const n=state.news.find(x=>x.id===id); if(!n)return;
+    $("#editNewsId").value=n.id; $("#newsTitle").value=n.title; $("#newsText").value=n.text; $("#newsImage").value=n.image||"";
+    $("#newsSubmit").textContent="ذخیره تغییرات"; $("#cancelNewsEdit").classList.remove("hidden");
+    activatePanel("newsFormPanel"); $("#panel").scrollIntoView({behavior:"smooth",block:"start"}); toast("خبر برای ویرایش بارگذاری شد.");
+  }
+  function activatePanel(id) {
+    $$(".panel-tab").forEach(b=>b.classList.toggle("active",b.dataset.panel===id));
+    $$(".panel-content").forEach(p=>p.classList.toggle("active",p.id===id));
+  }
+  function openQa(id) {
+    const t=state.tasks.find(x=>x.id===id); if(!t)return;
+    currentQaTaskId=id; $("#qaTitle").textContent=t.title; renderQaMessages();
+    if ($("#qaDialog").showModal) $("#qaDialog").showModal(); else $("#qaDialog").setAttribute("open","");
+  }
+  function renderQaMessages() {
+    const t=state.tasks.find(x=>x.id===currentQaTaskId); if(!t)return;
+    const messages=t.qa||[];
+    $("#qaMessages").innerHTML=messages.length?messages.map(m=>`<article class="qa-message"><div class="qa-message-head"><b>${escapeHTML(m.author)}</b><small>${escapeHTML(m.time||"")}</small></div><p>${escapeHTML(m.text)}</p><div class="qa-message-tools"><button class="mini-btn danger" data-action="delete-message" data-task-id="${escapeHTML(t.id)}" data-id="${escapeHTML(m.id)}">حذف پیام</button></div></article>`).join(""):`<div class="empty-state">هنوز پرسش یا پاسخی ثبت نشده است. اولین پیام را بنویس!</div>`;
+  }
+  function onActionClick(e) {
+    const btn=e.target.closest("[data-action]"); if(!btn)return;
+    const {action,id}=btn.dataset;
+    if(action==="qa") openQa(id);
+    if(action==="suggest-edit") { const t=state.tasks.find(x=>x.id===id); if(!t)return; $("#suggestionTitle").value=t.title; $("#suggestionSubject").value=t.subject; $("#suggestionDue").value=t.due; $("#suggestionDescription").value=t.description||""; activatePanel("suggestionsPanel"); $("#panel").scrollIntoView({behavior:"smooth"}); toast("مشخصات در فرم پیشنهاد کپی شد؛ پس از ارسال نیاز به تأیید دارد."); }
+    if(action==="edit-news") startEditNews(id);
+    if(action==="delete-news") { if(confirm("این خبر از اطلاعات همین مرورگر حذف شود؟")) { state.news=state.news.filter(n=>n.id!==id);save();renderNews();toast("خبر حذف شد."); } }
+    if(action==="approve-suggestion") { const s=state.suggestions.find(x=>x.id===id); if(!s)return; state.tasks.push({id:uid(),title:s.title,subject:s.subject,description:s.description,due:s.due,createdAt:new Date().toISOString(),done:false,qa:[]}); state.suggestions=state.suggestions.filter(x=>x.id!==id);save();renderAll();toast("پیشنهاد در فهرست تکالیف همین مرورگر منتشر شد."); }
+    if(action==="reject-suggestion") { state.suggestions=state.suggestions.filter(x=>x.id!==id);save();renderSuggestions();toast("پیشنهاد رد شد."); }
+    if(action==="delete-message") { if(confirm("پیام حذف شود؟")) { const t=state.tasks.find(x=>x.id===btn.dataset.taskId); if(t){t.qa=(t.qa||[]).filter(m=>m.id!==id);save();renderQaMessages();renderTasks();toast("پیام حذف شد.");} } }
+  }
+
+  $("#taskForm").addEventListener("submit",e=>{
+    e.preventDefault();
+    const id=$("#editTaskId").value;
+    const payload={title:$("#taskTitle").value.trim(),subject:$("#taskSubject").value.trim(),due:$("#taskDue").value,description:$("#taskDescription").value.trim()};
+    if(!payload.title||!payload.subject||!payload.due){toast("لطفاً عنوان، درس و مهلت را کامل کنید.");return;}
+    if(id){const t=state.tasks.find(x=>x.id===id);if(t)Object.assign(t,payload);}
+    else state.tasks.push({id:uid(),...payload,createdAt:new Date().toISOString(),done:false,qa:[]});
+    save();renderAll();resetTaskForm();toast(id?"تکلیف ویرایش شد.":"تکلیف ثبت شد.");
+  });
+  $("#cancelTaskEdit").addEventListener("click",resetTaskForm);
+  $("#newsForm").addEventListener("submit",e=>{
+    e.preventDefault();const id=$("#editNewsId").value;const payload={title:$("#newsTitle").value.trim(),text:$("#newsText").value.trim(),image:$("#newsImage").value.trim()};
+    if(!payload.title||!payload.text){toast("عنوان و متن خبر را وارد کنید.");return;}
+    if(payload.image){try{const u=new URL(payload.image);if(!["http:","https:"].includes(u.protocol))throw new Error();}catch{toast("لینک تصویر باید با https:// یا http:// شروع شود.");return;}}
+    if(id){const n=state.news.find(x=>x.id===id);if(n)Object.assign(n,payload);}
+    else state.news.push({id:uid(),...payload,createdAt:new Date().toISOString()});
+    save();renderNews();resetNewsForm();toast(id?"خبر ویرایش شد.":"خبر ثبت شد.");
+  });
+  $("#cancelNewsEdit").addEventListener("click",resetNewsForm);
+  $("#suggestionForm").addEventListener("submit",e=>{
+    e.preventDefault();const title=$("#suggestionTitle").value.trim(),subject=$("#suggestionSubject").value.trim(),due=$("#suggestionDue").value,description=$("#suggestionDescription").value.trim();
+    if(!title||!subject||!due){toast("عنوان، درس و تاریخ انجام را کامل کنید.");return;}
+    state.suggestions.push({id:uid(),title,subject,due,description,author:"دانش‌آموز",createdAt:new Date().toISOString()});save();renderSuggestions();e.target.reset();toast("پیشنهاد در فهرست محلی ثبت شد.");
+  });
+  $("#taskList").addEventListener("change",e=>{
+    if(e.target.matches('[data-action="toggle-task"]')){const t=state.tasks.find(x=>x.id===e.target.dataset.id);if(t){t.done=e.target.checked;save();renderTasks();toast(t.done?"آفرین! تکلیف انجام‌شده علامت خورد.":"تکلیف به انجام‌نشده برگشت.");}}
+  });
+  $("#taskList").addEventListener("click",onActionClick);
+  $("#newsList").addEventListener("click",onActionClick);
+  $("#suggestionList").addEventListener("click",onActionClick);
+  $("#qaMessages").addEventListener("click",onActionClick);
+  $$(".filter-tab").forEach(b=>b.addEventListener("click",()=>{currentFilter=b.dataset.filter;$$(".filter-tab").forEach(x=>x.classList.toggle("selected",x===b));renderTasks();}));
+  $("#taskSearch").addEventListener("input",renderTasks);
+  $$(".panel-tab").forEach(b=>b.addEventListener("click",()=>activatePanel(b.dataset.panel)));
+  $("#qaForm").addEventListener("submit",e=>{
+    e.preventDefault();const t=state.tasks.find(x=>x.id===currentQaTaskId);if(!t)return;
+    const author=$("#qaAuthor").value.trim(),text=$("#qaText").value.trim();if(!author||!text)return;
+    t.qa.push({id:uid(),author,text,time:nowText(),createdAt:new Date().toISOString()});save();$("#qaText").value="";renderQaMessages();renderTasks();toast("پیام در گفت‌وگوی همین تکلیف ثبت شد.");
+  });
+  $("#closeQa").addEventListener("click",()=>$("#qaDialog").close());
+  $("#qaDialog").addEventListener("click",e=>{if(e.target===$("#qaDialog"))$("#qaDialog").close();});
+  $("#exportData").addEventListener("click",()=>{
+    const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"});
+    const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=`daftar-903-backup-${todayISO()}.json`;document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);toast("فایل پشتیبان آماده شد.");
+  });
+  $("#importData").addEventListener("change",async e=>{
+    const file=e.target.files&&e.target.files[0];if(!file)return;
+    try{const parsed=JSON.parse(await file.text());if(!parsed||!Array.isArray(parsed.tasks)||!Array.isArray(parsed.news)||!Array.isArray(parsed.suggestions))throw new Error("ساختار نامعتبر");
+      if(!confirm("اطلاعات فعلی با محتوای فایل جایگزین شود؟"))return;
+      state=parsed;state.tasks.forEach(t=>{if(!Array.isArray(t.qa))t.qa=[];if(typeof t.done!=="boolean")t.done=false;});save();renderAll();toast("پشتیبان بازیابی شد.");
+    }catch{toast("فایل پشتیبان معتبر نیست.");}finally{e.target.value="";}
+  });
+  $("#resetData").addEventListener("click",()=>{
+    if(!confirm("همه تکالیف، خبرها، پیام‌ها و پیشنهادهای این مرورگر حذف و نمونه اولیه جایگزین شود؟"))return;
+    state=initial();save();renderAll();resetTaskForm();resetNewsForm();toast("اطلاعات محلی بازنشانی شد.");
+  });
+  $("#menuToggle").addEventListener("click",()=>$("#mainNav").classList.toggle("open"));
+  $$(".nav-link").forEach(a=>a.addEventListener("click",()=>{$("#mainNav").classList.remove("open");$$(".nav-link").forEach(x=>x.classList.toggle("active",x===a));}));
+  $("#taskDue").value=todayISO();$("#suggestionDue").value=todayISO();
+  renderDate();renderSchedule();renderAll();
+})();
+  </script>
+</body>
+</html>
